@@ -24,7 +24,7 @@ main:
     fld st0 ; st0 = 1.0
     frndint 
     fsub st1, st0 ; st1 = st1 - st0
-    fxch st1 ; st0 <-> st1
+    fxch st1 ; 
     f2xm1 
     fld1
     faddp st1, st0         
@@ -40,6 +40,7 @@ main:
     
     fst dword [rbp - 12]
     
+    fstp st0
     mov rsp, rbp
     pop rbp
     xor eax, eax

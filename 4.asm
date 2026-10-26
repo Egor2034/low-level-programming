@@ -1,7 +1,7 @@
 %include "io64.inc"
 
 section .rodata
-    epsilon: dd 0.00001 ; Погрешность для сравнения float
+    epsilon: dd 0.00001
 
 section .text
 global main
